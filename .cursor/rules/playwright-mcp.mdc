@@ -1,0 +1,6 @@
+---
+description: UI の確認には Playwright MCP を使用する
+alwaysApply: true
+---
+
+UI の確認には Playwright MCP を使用してください。

@@ -1,0 +1,13 @@
+name: Setup
+description: pnpm / node のセットアップと依存関係のインストール
+
+runs:
+  using: composite
+  steps:
+    - uses: pnpm/action-setup@v4
+    - uses: actions/setup-node@v6
+      with:
+        node-version-file: package.json
+        cache: pnpm
+    - run: pnpm install --frozen-lockfile
+      shell: bash
