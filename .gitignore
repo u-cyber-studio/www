@@ -1,3 +1,7 @@
 node_modules/
 .pnpm-store/
 .playwright-mcp/
+
+*.png
+!/public/assets/images/*.png
+!/public/assets/images/**/*.png

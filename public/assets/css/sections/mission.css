@@ -10,4 +10,7 @@
 .mission p {
   width: 70vw;
   max-width: 40rem;
+  animation: fade-in ease-out both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
 }

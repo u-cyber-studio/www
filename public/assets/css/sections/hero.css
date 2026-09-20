@@ -27,4 +27,7 @@
     width: auto;
     height: 200px;
   }
+  .hero p {
+    font-size: 1.5rem;
+  }
 }

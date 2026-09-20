@@ -1,0 +1,19 @@
+.values {
+  display: flex;
+  flex-direction: column;
+  justify-content: safe center;
+  align-items: center;
+  gap: 12rem;
+  min-height: 100dvh;
+}
+
+.values section {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 70vw;
+  max-width: 40rem;
+  animation: fade-in ease-out both;
+  animation-timeline: view();
+  animation-range: entry 40% cover 70%;
+}
