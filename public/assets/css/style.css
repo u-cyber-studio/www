@@ -1,18 +1,4 @@
-@font-face {
-  font-family: "Hangyaku";
-  src: url("../fonts/Hangyaku-0vRGR.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-body {
-  font-family: "Noto Sans JP", sans-serif;
-}
-
-h1,
-h2,
-h3 {
-  font-family: "Hangyaku", sans-serif;
-  font-synthesis: none;
-}
+@import "./settings.css";
+@import "./tools.css";
+@import "./elements.css";
+@import "./sections/hero.css";

@@ -1,0 +1,16 @@
+body {
+  margin: 0; /* ブラウザが body に付与する margin を無効化する */
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0; /* ブラウザが h に付与する margin を無効化する */
+  font-family: "Hangyaku", sans-serif;
+  font-synthesis: none;
+}
+
+p {
+  margin: 0; /* ブラウザが p に付与する margin を無効化する */
+}
