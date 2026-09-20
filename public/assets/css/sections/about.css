@@ -22,18 +22,14 @@
     rgb(0 0 0) 40%,
     rgb(0 0 0 / 0%)
   );
-  text-align: center;
-  color: rgb(255 255 255);
+}
+
+.about h2 {
+  display: none;
 }
 
 .about p {
-  font-size: 1rem;
-  line-height: 2;
+  text-align: center;
+  color: rgb(255 255 255);
   text-shadow: 1px 1px 1px rgb(0 0 0);
-}
-
-@media (width >= 1024px) {
-  .about p {
-    font-size: 1.5rem;
-  }
 }

@@ -1,0 +1,13 @@
+.mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: safe center;
+  align-items: center;
+  gap: 4rem;
+  min-height: 100dvh;
+}
+
+.mission p {
+  width: 70vw;
+  max-width: 40rem;
+}
