@@ -1,0 +1,39 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100dvh;
+  background-image:
+    radial-gradient(
+      ellipse 60% 20% at center,
+      rgb(0 0 0 / 20%) 40%,
+      rgb(0 0 0 / 0%)
+    ),
+    url("../../images/scene.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  mask-image: linear-gradient(
+    to bottom,
+    rgb(0 0 0 / 0%),
+    rgb(0 0 0) 40%,
+    rgb(0 0 0) 60%,
+    rgb(0 0 0) 40%,
+    rgb(0 0 0 / 0%)
+  );
+  text-align: center;
+  color: rgb(255 255 255);
+}
+
+.about p {
+  font-size: 1rem;
+  line-height: 2;
+  text-shadow: 1px 1px 1px rgb(0 0 0);
+}
+
+@media (width >= 1024px) {
+  .about p {
+    font-size: 1.5rem;
+  }
+}
