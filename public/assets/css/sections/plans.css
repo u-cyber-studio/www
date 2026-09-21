@@ -1,0 +1,169 @@
+.plans {
+  display: flex;
+  flex-direction: column;
+  justify-content: safe center;
+  align-items: center;
+  gap: 4rem;
+  min-height: 100dvh;
+  margin-bottom: 16rem;
+}
+
+.plans > input {
+  display: none;
+}
+
+.plans-table-desktop {
+  display: none;
+}
+
+.plans-table-mobile {
+  display: flex;
+  width: 90vw;
+  max-width: 40rem;
+  overflow: hidden;
+}
+
+.plans-table-mobile section {
+  flex: none;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.plans-table-mobile header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block: 2rem;
+}
+
+.plans-table-mobile h3 {
+  flex: 1;
+  text-align: center;
+}
+
+.plans-table-mobile header span,
+.plans-table-mobile header label {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 2.75rem;
+  height: 2.75rem;
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+/* 非活性矢印 */
+.plans-table-mobile header span {
+  color: rgb(0 0 0 / 15%);
+}
+
+/* 活性矢印 */
+.plans-table-mobile header label {
+  color: rgb(0 0 0 / 60%);
+  cursor: pointer;
+}
+
+.plans-table-mobile table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.plans-table-mobile th,
+.plans-table-mobile td {
+  position: relative;
+  padding-block: 1.75rem;
+  border-bottom: 1px solid rgb(0 0 0 / 12%);
+  font-weight: normal;
+  line-height: 2;
+  white-space: nowrap;
+}
+
+.plans-table-mobile th {
+  text-align: left;
+}
+
+.plans-table-mobile td {
+  width: 9rem;
+  text-align: center;
+}
+
+.plans-table-mobile small {
+  position: absolute;
+  inset-inline: 0;
+  top: calc(50% + 1rem);
+  font-size: 0.75rem;
+  line-height: 1;
+  color: rgb(0 0 0 / 60%);
+}
+
+#plan-support:checked ~ .plans-table-mobile section {
+  transform: translateX(-100%);
+}
+
+@media (width >= 1024px) {
+  .plans-table-mobile {
+    display: none;
+  }
+
+  .plans-table-desktop {
+    display: table;
+    width: 56rem;
+    table-layout: fixed;
+    border-collapse: collapse;
+    animation: fade-in ease-out both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+  }
+
+  .plans-table-desktop th,
+  .plans-table-desktop td {
+    position: relative;
+    border-bottom: 1px solid rgb(0 0 0 / 12%);
+    font-weight: normal;
+    line-height: 2;
+    white-space: nowrap;
+  }
+
+  .plans-table-desktop th {
+    text-align: left;
+  }
+
+  .plans-table-desktop td {
+    text-align: center;
+  }
+
+  .plans-table-desktop tbody th,
+  .plans-table-desktop tbody td {
+    padding-block: 2.5rem;
+    font-size: 1.25rem;
+  }
+
+  .plans-table-desktop tr > :first-child {
+    width: 42%;
+  }
+
+  .plans-table-desktop thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding-block: 1.5rem;
+    border-bottom: 1px solid rgb(0 0 0 / 24%);
+    font-family: "Hangyaku", sans-serif;
+    font-size: 2rem;
+    background: rgb(255 255 255);
+  }
+
+  .plans-table-desktop thead th:not(:first-child) {
+    text-align: center;
+  }
+
+  .plans-table-desktop small {
+    position: absolute;
+    inset-inline: 0;
+    top: calc(50% + 1.25rem);
+    font-size: 1rem;
+    line-height: 1;
+    color: rgb(0 0 0 / 60%);
+  }
+}
