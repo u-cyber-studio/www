@@ -1,7 +1,9 @@
 .about {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
   width: 100vw;
   min-height: 100dvh;
   background-image:
@@ -32,4 +34,14 @@
   text-align: center;
   color: rgb(255 255 255);
   text-shadow: 1px 1px 1px rgb(0 0 0);
+}
+
+.about p span {
+  display: block;
+}
+
+@media (width >= 1024px) {
+  .about p span {
+    display: inline;
+  }
 }
