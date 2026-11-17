@@ -5,6 +5,7 @@
   align-items: center;
   gap: 4rem;
   min-height: 100dvh;
+  margin-bottom: 16rem;
 }
 
 .mission p {
