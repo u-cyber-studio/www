@@ -30,11 +30,16 @@ h3 span {
   color: rgb(0 0 0 / 60%);
 }
 
-p {
-  margin: 0; /* ブラウザが p に付与する margin を無効化する */
+p,
+ul {
+  margin: 0; /* ブラウザが p / ul に付与する margin を無効化する */
   line-height: 2;
   text-align: left;
   font-size: 1rem;
+}
+
+ul {
+  padding-left: 1.25em; /* ブラウザ既定の 40px インデントを抑える */
 }
 
 @media (width >= 1024px) {
@@ -47,7 +52,8 @@ p {
     margin: 0;
   }
 
-  p {
+  p,
+  ul {
     font-size: 1.25rem;
   }
 }

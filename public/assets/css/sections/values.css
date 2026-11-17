@@ -18,3 +18,7 @@
   animation-timeline: view();
   animation-range: entry 40% cover 70%;
 }
+
+.values section ul {
+  margin-top: -4rem;
+}
