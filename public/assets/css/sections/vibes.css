@@ -1,0 +1,27 @@
+.vibes {
+  display: flex;
+  flex-direction: column;
+  justify-content: safe center;
+  align-items: center;
+  gap: 4rem;
+  min-height: 100dvh;
+  margin-bottom: 16rem;
+}
+
+.vibes img {
+  display: block;
+  width: 70vw;
+  max-width: 16rem;
+  height: auto;
+  animation: fade-in ease-out both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
+}
+
+.vibes p {
+  width: 70vw;
+  max-width: 40rem;
+  animation: fade-in ease-out both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
+}
