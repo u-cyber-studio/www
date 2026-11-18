@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Uematsu Cyber Studio icon">
+  <rect width="512" height="512" rx="64" fill="#000000"/>
+  <g fill="#ffffff" fill-rule="evenodd">
+    <!-- Spark of ambition -->
+    <path d="M256 56Q266 136 340 146Q266 156 256 236Q246 156 172 146Q246 136 256 56Z"/>
+    <!-- Anvil of craftsmanship -->
+    <path d="M72 256H416L440 236L416 292Q356 296 320 332V396H368V416H144V396H192V332Q156 296 72 256ZM248 280H264V396H248Z"/>
+    <!-- Foundation base -->
+    <path d="M96 432H416V448H96Z"/>
+  </g>
+</svg>
