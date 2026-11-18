@@ -45,6 +45,7 @@ ul {
 code {
   padding: 0.2em 0.4em;
   border-radius: 0.25rem;
+  word-break: break-all;
   background-color: rgb(0 0 0 / 6%);
 }
 
