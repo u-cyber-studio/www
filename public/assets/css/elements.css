@@ -48,6 +48,13 @@ code {
   background-color: rgb(0 0 0 / 6%);
 }
 
+button {
+  padding: 0; /* ブラウザが button に付与する装飾を無効化する */
+  border: none;
+  background: none;
+  font: inherit;
+}
+
 @media (width >= 1024px) {
   h3 {
     font-size: 3rem;

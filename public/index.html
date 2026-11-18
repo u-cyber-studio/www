@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
     >
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="module" src="assets/js/script.js"></script>
   </head>
   <body>
     <main>
@@ -137,14 +138,12 @@
       </section>
       <section id="plans" class="plans">
         <h2>選べるプラン <span>- Plans -</span></h2>
-        <input type="radio" name="plan" id="plan-copilot" checked>
-        <input type="radio" name="plan" id="plan-support">
         <div class="plans-table-mobile">
           <section>
             <header>
               <span>◀</span>
               <h3>伴走パートナー</h3>
-              <label for="plan-support">▶</label>
+              <button type="button">▶</button>
             </header>
             <table>
               <tbody>
@@ -201,7 +200,7 @@
           </section>
           <section>
             <header>
-              <label for="plan-copilot">◀</label>
+              <button type="button">◀</button>
               <h3>保守サポーター</h3>
               <span>▶</span>
             </header>
