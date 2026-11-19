@@ -32,12 +32,29 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-block: 2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 2rem;
 }
 
 .plans-table-mobile h3 {
+  position: relative;
   flex: 1;
   text-align: center;
+}
+
+.plans-table-mobile em {
+  position: absolute;
+  inset-inline: 0;
+  bottom: calc(50% + 2.5rem);
+  width: fit-content;
+  margin-inline: auto;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25rem;
+  font-style: normal;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: rgb(255 255 255);
+  background: rgb(0 0 0);
 }
 
 .plans-table-mobile header span,
@@ -142,7 +159,7 @@
     position: sticky;
     top: 0;
     z-index: 1;
-    padding-block: 1.5rem;
+    padding-block: 3rem;
     border-bottom: 1px solid rgb(0 0 0 / 24%);
     font-family: "Hangyaku", sans-serif;
     font-size: 2rem;
@@ -151,6 +168,21 @@
 
   .plans-table-desktop thead th:not(:first-child) {
     text-align: center;
+  }
+
+  .plans-table-desktop em {
+    position: absolute;
+    inset-inline: 0;
+    bottom: calc(50% + 2.5rem);
+    width: fit-content;
+    margin-inline: auto;
+    padding: 0.2em 0.4em;
+    border-radius: 0.25rem;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: rgb(255 255 255);
+    background: rgb(0 0 0);
   }
 
   .plans-table-desktop small {
